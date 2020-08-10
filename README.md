@@ -1,4 +1,4 @@
-#M2 Force Login
+# M2 Force Login
 
 Force users to first login or register before seeing any products or pages.
 
