@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * # NOTICE OF LICENSE
+ * This work is licensed under a ***Creative Commons Attribution-NonCommercial-
+ * NoDerivs 3.0 Unported License*** http://creativecommons.org/licenses/by-nc-nd/3.0
+ *
+ * ## Authors
+ *
+ * Iván Miranda @deivanmiranda
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="controller_action_postdispatch">
+        <observer name="forcelogin_controller_action_postdispatch" instance="Sincco\ForceLogin\Observer\ForceCustomerLoginObserver" />
+    </event>
+</config>
+ 

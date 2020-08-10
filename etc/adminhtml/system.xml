@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * # NOTICE OF LICENSE
+ * This work is licensed under a ***Creative Commons Attribution-NonCommercial-
+ * NoDerivs 3.0 Unported License*** http://creativecommons.org/licenses/by-nc-nd/3.0
+ *
+ * ## Authors
+ *
+ * Iván Miranda @deivanmiranda
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="sincco" translate="label" sortOrder="200">
+            <label>Sincco</label>
+        </tab>
+        <section id="forcelogin" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+			<class>separator-top</class>           
+            <label>Force Login</label>
+            <tab>sincco</tab>
+            <resource>Sincco_ForceLogin::config_forcelogin</resource>
+            <group id="parameters" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Settings</label>
+                <hide_in_single_store_mode>1</hide_in_single_store_mode>
+                <field id="status" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Extension Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="access_to_website" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Access to Website</label>
+                    <source_model>Sincco\ForceLogin\Model\Config\Source\Access</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

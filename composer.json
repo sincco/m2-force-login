@@ -1,0 +1,25 @@
+{
+    "name": "sincco/m2-force-login",
+    "description": "Force users to first login or register before seeing any products or pages.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "CC-BY-NC-ND"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Sincco\\ForceLogin\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Ivan Miranda",
+            "email": "pa.ivan.miranda@gmail.com",
+            "homepage": "http://ivanmiranda.me",
+            "role": "Leader"
+        }
+    ]
+}
